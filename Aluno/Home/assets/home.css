@@ -1,0 +1,89 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header #logo {
+    color: white;
+}
+
+header #barra-de-busca {
+    flex-grow: 1; 
+    padding: 0 85px; 
+}
+
+header #barra-de-busca input[type="search"] {
+    width: 100%;
+}
+
+header #logo, header #nav_topo {
+    float: none;
+}
+
+
+
+/*.nav-link.active {
+    background-color: yellow !important;
+}*/
+
+/*MAIN*/
+main{
+    background-color: #262626;
+}
+
+h1, p{
+    color:white !important;
+}
+
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 450px !important; 
+}
+
+.cor-barra-busca{
+    border: blue 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover{
+    background-color: blue !important;
+}
+
+.resolucao-cards{
+    width: 200px !important;
+    height: auto !important;
+}
+
+.preto {
+    color: black !important;
+}
+
+/*LIVROS RECOMENDADOS*/
+.card-img-size{
+    height: 200px;
+    object-fit: cover;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+/* Ajustes para responsividade e acessibilidade podem ser adicionados conforme necessário */
