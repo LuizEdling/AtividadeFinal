@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo ao GBooks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/login/assets/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Orelega+One&family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="login.js"></script>
 </head>
 <body>
     <div id="bloco_login">
-        <div id="imagem">
-            
-        </div>
+        <div id="imagem"></div>
 
         <div id="login">
-            <h2 id="logo"><span class="azul">G</span>Books</h2>
-            <form action="" id="loginDocument">
-                <label for="document" id="labelDocument">Login:</label>
-                <br>
-                <input type="text" id="document" placeholder="Digite seu login...">
-            </form>
+            <h2 id="logo" class="azul"><span class="amarelo">G</span>Books</h2>
+            <div id="loginDocument">
+                <form id="form" action="/login/login.js" method="post">
+                    <label for="document" id="labelDocument" class="amarelo">Login</label>
+                    <br>
+                    <div class="input-group" id="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" id="document" class="form-control" placeholder="Digite seu login..." required>
+                    </div>
+                    <p class="errorMessageLogin">Login Incorreto!</p>
+                    <br>
+                    <label for="password" id="labelPassword" class="amarelo">Senha</label>
+                    <br>
+                    <div class="input-group" id="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        </div>
+                        <input type="password" id="password" class="form-control" placeholder="Digite sua senha..." required>
+                    </div>
+                    <p class="errorMessagePassword">Senha Incorreta!</p>
+                    <br>
+                    <div class="input-group" id="input-group">
+                        <input type="submit" value="Enviar" id="submit" class="form-control">
+                    </div>
+                </form>
+            </div>
             
         </div>
     </div>
-
-    <script src="login.js"></script>
 </body>
 </html>
