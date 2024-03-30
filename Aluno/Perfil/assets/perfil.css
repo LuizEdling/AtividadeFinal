@@ -1,32 +1,52 @@
+.amarelo{
+    color: #FFBE0B;
+}
+.azul{
+    color: #623CEA;
+}
+
+/*RESET CSS*/
 *{
     margin: 0;
     padding: 0;
 }
 
-main{
-    background-color: #262626;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header #logo{
-    float: left;
-    color: white;
-}
-  
-header #nav_topo{
-    float: right;
-}
-
-header{
     padding: 10px 20px;
+    background-color: rgb(27, 26, 26);
 }
 
+header #logo {
+    color: #623CEA !important;
+    margin-right: 20px;
+}
 
-/*.nav-link.active {
-    background-color: yellow !important;
-}*/
+header #logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+}
+
+ul li a:hover{
+    color: #684ec5 !important;
+}
+
+.pagina-atual{
+    color: #FFBE0B !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #623CEA 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover{
+    background-color: #623CEA !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
