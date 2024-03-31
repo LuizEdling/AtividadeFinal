@@ -11,6 +11,11 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+/*HEADER*/
 header {
     padding: 10px 20px;
     background-color: rgb(27, 26, 26);
@@ -49,4 +54,103 @@ ul li a:hover{
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/*MAIN*/
+main{
+    background-color: rgb(27, 26, 26);
+    color: white; /* Cor do texto */
+    padding: 20px;
+}
+
+/*CARDS LIVROS FAVORITOS*/
+/* Garante que todos os cards tenham a mesma altura */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; 
+    color: white; 
+    border: none;
+}
+.card-img-top {
+    width: 100%; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 0.25rem; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.card-title, .card-text{
+    margin: 0;
+}
+
+.card-body h5 {
+    flex-grow: 1;
+    color: black;
+}
+
+/*HISTORICO*/
+#historico{
+    margin-bottom: 40px;
+}
+#historico .row.flex-nowrap {
+    overflow-x: auto;
+}
+
+#historico .card {
+    margin-right: 15px; 
+}
+
+#historico .card-body {
+    padding: 0.5rem; 
+}
+
+#historico .card-title {
+    font-size: 0.9rem; 
+    margin-bottom: 0; 
+}
+
+/*REDES SOCIAIS*/
+.btn-twitter {
+    background-color: #1DA1F2 !important; 
+    color: white;
+}
+
+.btn-twitter:hover {
+    background-color: #1991DA !important; 
+    color: white; 
+}
+
+.btn-instagram {
+    background-color: #E1306C !important;
+    color: white; 
+}
+
+.btn-instagram:hover {
+    background-color: #C13584 !important;
+    color: white; 
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
 }
