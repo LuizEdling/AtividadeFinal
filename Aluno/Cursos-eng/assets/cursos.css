@@ -1,0 +1,109 @@
+/*
+body{
+    background-color: rgb(45, 44, 44);
+}
+Cor de fundo secundária:
+background-color: rgb(62, 58, 58);
+*/
+
+.amarelo{
+    color: #FFBE0B;
+}
+.azul{
+    color: #623CEA;
+}
+
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: rgb(27, 26, 26);
+}
+
+header #logo {
+    color: #623CEA !important;
+    margin-right: 20px;
+}
+
+header #logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+}
+
+ul li a:hover{
+    color: #684ec5 !important;
+}
+
+.pagina-atual{
+    color: #FFBE0B !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #623CEA 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover{
+    background-color: #623CEA !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper .card {
+    display: inline-block;
+}
+
+h2{
+    color: white !important;
+}
+
+.card-img-top{
+    height: 250px !important;
+    object-fit: cover !important;
+}
+
+#titulo h1{
+    color: white !important;
+    text-align: center !important;
+    margin: 10px 0px -20px 0px!important;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}

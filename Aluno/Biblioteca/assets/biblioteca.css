@@ -1,3 +1,11 @@
+/*
+body{
+    background-color: rgb(45, 44, 44);
+}
+Cor de fundo secundária:
+background-color: rgb(62, 58, 58);
+*/
+
 .amarelo{
     color: #FFBE0B;
 }
@@ -49,4 +57,50 @@ ul li a:hover{
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.scrolling-wrapper .card {
+    display: inline-block;
+}
+
+h2{
+    color: white !important;
+}
+
+.card-img-top{
+    height: 250px !important;
+    object-fit: cover !important;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
 }
