@@ -61,60 +61,34 @@ ul li a:hover{
 
 
 /*MAIN*/
-main{
-    background-color: rgb(27, 26, 26);
+body{
+    background-color: rgb(27, 26, 26) !important;
 }
 
-h1, p{
-    color:white !important;
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper .card {
+    display: inline-block;
 }
 
-.carousel-img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    max-height: 450px !important; 
+h2{
+    color: white !important;
 }
 
-
-.resolucao-cards{
-    width: 200px !important;
-    height: auto !important;
+.card-img-top{
+    height: 250px !important;
+    object-fit: cover !important;
 }
 
-.preto {
-    color: black !important;
+#titulo h1{
+    color: white !important;
+    text-align: center !important;
+    margin: 10px 0px -20px 0px!important;
 }
-
-/*LIVROS RECOMENDADOS*/
-.card-img-size{
-    height: 200px;
-    object-fit: cover;
-}
-
-/*RESENHAS*/
-#resenhas-livros {
-    background-color: rgb(27, 26, 26) !important; 
-    padding-top: 60px; 
-    padding-bottom: 30px; 
-    color: white; 
-}
-
-#resenhas-livros .card {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    background-color: #333; 
-}
-
-#resenhas-livros .card h5,
-#resenhas-livros .card p {
-    color: white; 
-}
-
-#resenhas-livros .card-img-top {
-    height: 200px; 
-    object-fit: cover; 
-}
-
 
 /*FOOTER*/
 .site-footer {
