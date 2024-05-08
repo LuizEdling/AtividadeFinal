@@ -11,117 +11,171 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg"> <!-- Define umabarra de navegação que se expande em telas grandes e secondensa em telas menores -->
+        <div class="container-fluid"> <!-- Containerresponsivo que se ajusta ao tamanho da tela -->
+            
             <!-- Logo GBooks -->
-            <h1 id="logo"><span style="color: #FFBE0B">G</span>Books</h1>
+            <div class="logo">
+                <h1><span id="logo-g">G</span>Books</h1>
+            </div>
             
             <!-- Toggler para menu em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+                <!-- Botão que controla a expansão econtração do menu em telas pequenas -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Itens do menu e barra de busca -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Container que agrupa e esconde oconteúdo do menu em telas menores até queseja expandido -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Lista de links de navegaçãohorizontal para grandes telas e verticalpara telas pequenas -->
                     <li class="nav-item">
+                        <!-- Item do menu de navegação - Home-->
                         <a class="nav-link pagina-atual" aria-current="page" href="../Home/home.html">Início</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Disciplinas -->
                         <a class="nav-link" href="../Disciplinas/disciplinas.html">Disciplinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Biblioteca/biblioteca.html">Biblioteca</a>
+                        <!-- Item do menu de navegação -Biblioteca -->
+                        <a class="nav-link" href="..Biblioteca/biblioteca.html">Biblioteca</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Perfil -->
                         <a class="nav-link" href="../Perfil/perfil.html">Perfil</a>
                     </li>
                 </ul>
-
-                <!-- Barra de pesquisa movida para dentro do collapse para mostrar em dispositivos móveis -->
+                
+                
+                <!-- Barra de pesquisa movida para dentro docollapse para mostrar em dispositivos móveis-->
+                <!-- Formulário flexível para alinhamento -->
                 <form class="d-flex">
+                    <!-- Campo de entrada grande para apesquisa -->
                     <input class="form-control me-2 form-control-lg" type="search" placeholder="Pesquisar livro" aria-label="Search">
+                    <!-- Botão de envio com estilo outline eclasse personalizada para cor -->
                     <button class="btn btn-outline-success cor-barra-busca" type="submit">Buscar</button>
                 </form>
+                
             </div>
         </div>
     </nav>
 </header>
+    
 <main>
+    <!-- Abertura para seção de carrossel de imagens -->
     <section id="carrossel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators"     data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide   1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators"     data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators"     data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <!-- 
+            Define um carrossel com identificação única para referência. 
+            `carousel slide`: cria o efeito de deslize entre itens.
+            `data-bs-ride="carousel"`: inicializa o carrossel automaticamente quando a página é carregada.
+            `data-bs-interval="5000"`: define o intervalo entre os slides para 5 segundos.
+            -->
+    
+            <div class="carousel-indicators"> <!-- Indicadores para navegar entre os slides -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/primeiro.png" class="d-block img-fluid  carousel-img" alt="...">
+    
+            <div class="carousel-inner"> <!-- Container para os slides do carrossel -->
+                <!-- Primeiro item do carrossel; 'active' indica que ele será o primeiro a ser exibido -->
+                <div class="carousel-item active"> 
+                    <!-- Imagem do slide; `d-block` e `img-fluid` são usadas para responsividade -->
+                    <img src="assets/images/primeiro_slide.png" class="d-block img-fluid carousel-img" alt="Convite para clube do livro">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/images/segundo.png" class="d-block img-fluid   carousel-img" alt="...">
+                    <!-- Imagem do slide; `d-block` e `img-fluid` são usadas para responsividade -->
+                    <img src="assets/images/segundo_slide.png" class="d-block img-fluid carousel-img" alt="Livro destaque semanal">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/images/terceiro.png" class="d-block img-fluid  carousel-img" alt="...">
+                    <!-- Imagem do slide; `d-block` e `img-fluid` são usadas para responsividade -->
+                    <img src="assets/images/terceiro.png" class="d-block img-fluid carousel-img" alt="Acesse o instagram da página: @GBOOKS">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button"     data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
+    
+            <!-- Botão de controle para navegar para o slide anterior -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <!-- Ícone visual para o botão de navegação anterior -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- Texto alternativo para leitores de tela (não visível visualmente) -->
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button"     data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden"></span>
+            <!-- Botão de controle para navegar para o próximo slide -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <!-- Ícone visual para o botão de navegação seguinte -->
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- Texto alternativo para leitores de tela (não visível visualmente) -->
+                <span class="visually-hidden">Próximo</span>
             </button>
         </div>
     </section>
-    <!--LIVROS RECOMENDADOS-->
+
+    <!--MAIS ACESSADOS -->
     <section id="MaisAcessados" class="container mt-4">
+        <!-- 'container' é usado para alinhar e centralizar o conteúdo da seção; 'mt-4' aplica uma margem superior -->
         <h1>Mais acessados</h1>
+    
+        <!-- 'row' cria uma linha flexível; 'justify-content-center' centraliza os itens horizontalmente -->
         <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
-                <div class="card mx-auto" style="width: 18rem; padding: 15px;">
+    
+            <!-- Cada coluna abaixo contém um cartão para um livro -->
+            <!-- 'col-lg-3' usa 3/12 colunas em telas grandes; 'col-md-6' usa 6/12 colunas em telas médias; 'col-sm-6' em telas pequenas -->
+            <!-- 'd-flex' aplica display flex; 'align-items-stretch' faz com que os itens estiquem para preencher o contêiner -->
+            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">                
+                <!-- 'card' define um cartão Bootstrap; 'mx-auto' centraliza o cartão horizontalmente; Cartão com largura fixa e padding -->
+                <div class="card mx-auto" style="width: 18rem; padding: 15px;">                   
+                    <!-- 'card-img-top' faz com que a imagem fique no topo do cartão; 'card-img-size' classe personalizada para definir tamanho -->
                     <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">
+                    
+                    <!-- 'card-body' contém o conteúdo do cartão; 'd-flex' aplica display flex; 'flex-column' organiza os itens em uma coluna -->
                     <div class="card-body d-flex flex-column">
+                        <!-- Título do livro -->
                         <h5 class="card-title">Primeiro livro</h5>
-                        <p class="card-text preto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa placeat nam necessitatibus totam doloremque?</p>
+                        
+                        <!-- Texto de descrição do livro -->
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa placeat nam necessitatibus totam doloremque?</p>
+                        
+                        <!-- Link para mais informações do livro; 'btn btn-primary' define o estilo do botão; 'mt-auto' aplica margem automática no topo para alinhar o botão na base -->
                         <a href="../Livros/livro-base.html" class="btn btn-primary mt-auto">Ler mais</a>
-                    </div>
-                </div>
+                    </div>                   
+                </div>               
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
-                <div class="card mx-auto" style="width: 18rem; padding: 15px;">
-                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">
+            <!-- Repetição dos cards -->
+            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">               
+                <div class="card mx-auto" style="width: 18rem; padding: 15px;">                    
+                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">                    
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Segundo livro</h5>
-                        <p class="card-text preto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae deserunt magni non soluta enim eos tempora voluptatibus ut voluptatem natus?</p>
+                        <h5 class="card-title">Primeiro livro</h5>                        
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa placeat nam necessitatibus totam doloremque?</p>                        
                         <a href="../Livros/livro-base.html" class="btn btn-primary mt-auto">Ler mais</a>
-                    </div>
-                </div>
+                    </div>                   
+                </div>               
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
-                <div class="card mx-auto" style="width: 18rem; padding: 15px;">
-                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">
+            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">               
+                <div class="card mx-auto" style="width: 18rem; padding: 15px;">                    
+                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">                    
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Terceiro livro</h5>
-                        <p class="card-text preto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ut suscipit aliquid.</p>
+                        <h5 class="card-title">Primeiro livro</h5>                        
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa placeat nam necessitatibus totam doloremque?</p>                        
                         <a href="../Livros/livro-base.html" class="btn btn-primary mt-auto">Ler mais</a>
-                    </div>
-                </div>
+                    </div>                   
+                </div>               
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
-                <div class="card mx-auto" style="width: 18rem; padding: 15px;">
-                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">
+            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">               
+                <div class="card mx-auto" style="width: 18rem; padding: 15px;">                    
+                    <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top card-img-size" alt="...">                    
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Quarto livro</h5>
-                        <p class="card-text preto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam quasi, beatae hic quaerat expedita accusamus eum excepturi iure! Modi, inventore.</p>
+                        <h5 class="card-title">Primeiro livro</h5>                        
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa placeat nam necessitatibus totam doloremque?</p>                        
                         <a href="../Livros/livro-base.html" class="btn btn-primary mt-auto">Ler mais</a>
-                    </div>
-                </div>
-            </div>
+                    </div>                   
+                </div>               
+            </div>  
         </div>
-    </section>  
+    </section>
     
     <section id="resenhas-livros" class="bg-dark text-white py-5" style="background-color: rgb(27, 26, 26);">
         <div class="container">
@@ -189,13 +243,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    
-       
+    </section>    
 </main>
 
-<div class="divider"></div>
+<div class="divider"></div> <!-- div para linha divisora usando classe "divider"-->
 
 <footer class="site-footer">
     <div class="container">
@@ -206,6 +257,6 @@
 <!--BootStrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"crossorigin="anonymous"></script>
-
+<script src="assets/script.js"></script>
 </body>
 </html>
