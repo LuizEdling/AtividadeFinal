@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var login = document.getElementById('document').value;
         var senha = document.getElementById('password').value;
         if(login == 'loginaluno@gmail.com' && senha == 'abc123'){
-            window.location.assign('/Aluno/Home/home.html');
+            window.location.assign('/AtividadeFinal/Aluno/Home/home.html');
         }
 
         if(login == 'loginprofessor@gmail.com' && senha == '123abc'){
-            window.location.assign('/Professor/Home/home.html');
+            window.location.assign('/AtividadeFinal/Professor/Home/home.html');
         }
 
         if(login != 'loginaluno@gmail.com' && login != 'loginprofessor@gmail.com'){
