@@ -14,7 +14,7 @@ body{
 /*BLOCO LOGIN*/
 
 #bloco_login{
-    background-color: rgb(62, 58, 58);
+    background-color: rgb(65, 65, 65);
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -32,7 +32,8 @@ body{
     border-bottom-left-radius: 0px;
     height: 100%;
     width: 50%;
-    background: url('/login/assets/imagens/um-livro-antigo-magico_863013-155109.avif') no-repeat center center;
+    background: url(imagens/livro2_campo_real.png) no-repeat center center;
+    background-size: cover;
     float: right;
 }
 
@@ -65,6 +66,8 @@ body{
 
 #logo{
     font-size: 60px;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0); 
+
 }
 
 /*---------------------------*/
@@ -130,11 +133,11 @@ body{
 
 /*CORES*/
 .amarelo{
-    color: #FFBE0B;
+    color: #FEBF00;
 }
 
 .azul{
-    color: #623CEA;
+    color: #00427F;
 }
 /*---------------------------*/
 
