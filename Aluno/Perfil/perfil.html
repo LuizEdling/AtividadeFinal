@@ -14,11 +14,11 @@
             
             <!-- Logo GBooks -->
             <div class="logo">
-                <h1><span id="logo-g">G</span>Books</h1>
+                <img src="assets/images/logo-gbook.png" alt="logo-gbook">
             </div>
             
             <!-- Toggler para menu em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Togglenavigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
                 <!-- Botão que controla a expansão econtração do menu em telas pequenas -->
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,7 +30,7 @@
                     <!-- Lista de links de navegaçãohorizontal para grandes telas e verticalpara telas pequenas -->
                     <li class="nav-item">
                         <!-- Item do menu de navegação - Home-->
-                        <a class="nav-link" href="../Home/home.html">Início</a>
+                        <a class="nav-link pagina-atual" aria-current="page" href="../Home/home.html">Início</a>
                     </li>
                     <li class="nav-item">
                         <!-- Item do menu de navegação -Disciplinas -->
@@ -42,10 +42,11 @@
                     </li>
                     <li class="nav-item">
                         <!-- Item do menu de navegação -Perfil -->
-                        <a class="nav-link pagina-atual" aria-current="page" href="../Perfil/perfil.html">Perfil</a>
+                        <a class="nav-link" href="../Perfil/perfil.html">Perfil</a>
                     </li>
                 </ul>
-                                   
+                
+                
                 <!-- Barra de pesquisa movida para dentro docollapse para mostrar em dispositivos móveis-->
                 <!-- Formulário flexível para alinhamento -->
                 <form class="d-flex">
@@ -60,25 +61,28 @@
     </nav>
 </header>
 
-<div class="divider"></div>
+<div class="divider"></div> <!-- div para linha divisora usando classe "divider"-->
 
-<main role="main" class="container mt-5">
-    <section id="info-base">
-        <div class="profile-header-container text-center">
-            <img src="assets/images/perfil-semfoto.jpg" class="rounded-circle mb-3" alt="Foto do Usuário" width="150">
+<main class="container mt-5"> <!--A classe ultilizada fornece mais responsividade-->
+    <!--Início da section para as informações do aluno-->
+    <section id="info-aluno">
+        <!--Classes para alinhamento dos itens e mudança da cor dos textos-->
+        <div class="text-center texto-branco">
+            <img src="assets/images/perfil-semfoto.jpg" alt="Foto do Usuário" id="foto-aluno" width="150">
             <h2>Aluno</h2>
             <p>Faculdade: Campo Real</p>
         </div>
     </section>
 
+    <!--Início da section de livros favoritos-->
     <section id="favoritos">
-        <div class="row mb-4">
+        <div class="row mb-4"> <!--Classe do BootStrap para responsividade de 4 em 4 itens-->
             <div class="col">
-                <h3>Livros Favoritos</h3>
+                <h3 class="texto-branco">Livros Favoritos</h3>
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                        <div class="card h-100">
-                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 1">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4"> <!--Classes para garantir reponsividade-->
+                        <div class="card h-100"> <!--Classe para definir tamanho do card além da imagem-->
+                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" id="livro_fav_1" alt="Capa do livor favorito 1">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Título do Livro 1</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto aliquid asperiores ab    blanditiis quam debitis facilis at similique rem!</p>
@@ -87,7 +91,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                         <div class="card h-100">
-                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 2">
+                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" id="livro_fav_2" alt="Capa do Livro 2">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Título do Livro 2</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloremque corporis delectus aspernatur ratione, magnam alias aut iste sint iusto sequi ducimus blanditiis quae at laborum totam illo debitis possimus itaque? Ipsa maxime harum tempora sed a, eligendi inventore esse!</p>
@@ -96,7 +100,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                         <div class="card h-100">
-                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 2">
+                            <img src="../Livros/assets/images/capa-branca.jpg" class="card-img-top" id="livro_fav_3" alt="Capa do Livro 2">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Título do Livro 3</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo quos! Voluptate fugit iste,     quam hic reiciendis, sit saepe modi exercitationem quos nesciunt iure velit tempora architecto minima. Autem natus  esse dolorum aliquid animi consectetur?</p>
@@ -108,9 +112,11 @@
         </div>
     </section>
 
+    <!--Section para o histórico de livros acessados-->
     <section id="historico">
-        <h3>Recém acessados</h3>
+        <h3 class="texto-branco">Recém acessados</h3>
         <div class="container mt-4">
+            <!--Todas as classes foram usadas para manter a responsividade-->
             <div class="row flex-nowrap overflow-auto">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                     <div class="card">
@@ -165,11 +171,11 @@
     </section>
 </main>
 
-<div class="divider"></div>
+<div class="divider"></div> <!-- div para linha divisora usando classe "divider"-->
 
 <footer class="site-footer">
     <div class="container">
-        <p>&copy; 2024 GBooks. Todos os direitos reservados.</p>
+        <p>&copy; 2024 GBook. Todos os direitos reservados.</p>
     </div>
 </footer>
 

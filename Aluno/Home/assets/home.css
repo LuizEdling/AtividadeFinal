@@ -19,13 +19,10 @@ header {
 }
 
 /*Logo*/
-header .logo h1 {
-    color: #623CEA !important;
+header .logo img{
+    max-width: 20vh;
+    height: auto;
     margin-right: 20px;
-}
-
-header .logo #logo-g{
-    color: #FFBE0B !important;
 }
 
 /*Navbar*/
@@ -35,6 +32,7 @@ header .logo, header #nav_topo {
 
 ul li a{
     color: white !important;
+    font-size: 15px !important;
 }
 
 ul li a:hover{
@@ -51,7 +49,7 @@ ul li a:hover{
     color: white !important;
 }
 
-.cor-barra-busca:hover{
+.cor-barra-busca:hover, .cor-barra-busca:active{
     background-color: #623CEA !important;
 }
 
@@ -90,7 +88,7 @@ h1, p{
 /*LIVROS RECOMENDADOS*/
 #MaisAcessados .card{
     background-color: #fff !important;
-    border: 4px solid #623CEA !important;  
+    border: 3px solid #623CEA !important;  
     width: 18rem !important;
     padding: 15px !important;
 }
@@ -123,7 +121,7 @@ h1, p{
 #resenhas-livros .card {
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     background-color: white !important;
-    border: 4px solid #623CEA;
+    border: 3px solid #623CEA;
 }
 
 #resenhas-livros .card h5,
