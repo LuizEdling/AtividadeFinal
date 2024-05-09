@@ -72,7 +72,14 @@ h1, p{
     width: 100%;
     object-fit: cover;
     object-position: center;
-    max-height: 450px !important; 
+    max-height: 550px !important; 
+}
+
+/*Media query para ajustamento das imagens em telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px){
+    #MaisAcessados .card{
+        margin-bottom: 20px !important;
+    }
 }
 
 /*Mais acessados*/
@@ -84,6 +91,8 @@ h1, p{
 #MaisAcessados .card{
     background-color: #fff !important;
     border: 4px solid #623CEA !important;  
+    width: 18rem !important;
+    padding: 15px !important;
 }
 
 #MaisAcessados .card a{
@@ -94,6 +103,13 @@ h1, p{
 #MaisAcessados .card-img-size{
     height: 200px;
     object-fit: cover;
+}
+
+/*Media query para espaçamento dos cards para telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px){
+    #MaisAcessados .card{
+        margin-bottom: 20px !important;
+    }
 }
 
 /*RESENHAS*/
