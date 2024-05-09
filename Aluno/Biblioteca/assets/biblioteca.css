@@ -60,10 +60,7 @@ ul li a:hover{
 
 
 /*MAIN*/
-body{
-    background-color: rgb(27, 26, 26) !important;
-}
-
+/*Alterando barra de rolagem em cada área de matérias*/
 .scrolling-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
@@ -81,12 +78,19 @@ body{
     background-color: #f4f0f0;
     border-radius: 30px;
 }
+
 .scrolling-wrapper .card {
     display: inline-block;
 }
 
+/*Alterando cor de texto e cards*/
 h2{
     color: rgb(255, 255, 255) !important;
+}
+
+#engenharias a, #saude a, #ciencias-socieais-aplicadas a{
+    text-decoration: none !important; 
+    color: inherit !important;
 }
 
 .card-img-top{
