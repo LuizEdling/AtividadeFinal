@@ -17,8 +17,9 @@ header {
     background-color: rgb(27, 26, 26);
 }
 
-header #logo {
-    color: #623CEA !important;
+header .logo img{
+    max-width: 20vh;
+    height: auto;
     margin-right: 20px;
 }
 
