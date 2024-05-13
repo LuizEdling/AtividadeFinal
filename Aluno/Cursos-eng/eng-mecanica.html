@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eng. Mecânica - GBooks</title>
+    <link rel="icon" href="assets/images/icone-_1_.ico" type="image/x-icon">
     <!--Link para arquivo externo CSS-->
     <link rel="stylesheet" href="assets/cursos.css">
     <!--BootStrap CSS-->
@@ -11,53 +12,70 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg"> <!-- Define umabarra de navegação que se expande em telas grandes e secondensa em telas menores -->
+        <div class="container-fluid"> <!-- Containerresponsivo que se ajusta ao tamanho da tela -->
+            
             <!-- Logo GBooks -->
-            <h1 id="logo"><span style="color: #FFBE0B">G</span>Books</h1>
+            <div class="logo">
+                <img src="assets/images/logo-gbook.png" alt="logo-gbook">
+            </div>
             
             <!-- Toggler para menu em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+                <!-- Botão que controla a expansão econtração do menu em telas pequenas -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Itens do menu e barra de busca -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Container que agrupa e esconde oconteúdo do menu em telas menores até queseja expandido -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Lista de links de navegaçãohorizontal para grandes telas e verticalpara telas pequenas -->
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../Home/home.html">Início</a>
+                        <!-- Item do menu de navegação - Home-->
+                        <a class="nav-link" href="../Home/home.html">Início</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Disciplinas -->
                         <a class="nav-link" href="../Disciplinas/disciplinas.html">Disciplinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  pagina-atual" href="../Biblioteca/biblioteca.html">Biblioteca</a>
+                        <!-- Item do menu de navegação -Biblioteca -->
+                        <a class="nav-link pagina-atual" aria-current="page" href="../Biblioteca/biblioteca.html">Biblioteca</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Perfil -->
                         <a class="nav-link" href="../Perfil/perfil.html">Perfil</a>
                     </li>
                 </ul>
-
-                <!-- Barra de pesquisa movida para dentro do collapse para mostrar em dispositivos móveis -->
+                
+                
+                <!-- Barra de pesquisa movida para dentro docollapse para mostrar em dispositivos móveis-->
+                <!-- Formulário flexível para alinhamento -->
                 <form class="d-flex">
+                    <!-- Campo de entrada grande para apesquisa -->
                     <input class="form-control me-2 form-control-lg" type="search" placeholder="Pesquisar livro" aria-label="Search">
+                    <!-- Botão de envio com estilo outline eclasse personalizada para cor -->
                     <button class="btn btn-outline-success cor-barra-busca" type="submit">Buscar</button>
                 </form>
+                
             </div>
         </div>
     </nav>
 </header>
 
-<div class="divider"></div>
+<div class="divider"></div> <!-- div para linha divisora usando classe "divider"-->
 
 <main>
-    <seciton id="titulo">
+    <!--Section para título da matéria-->
+    <section id="titulo">
         <h1>Engenharia Mecânica</h1>
     </seciton>
+    <!--Section para criação da primeira linha de livros-->
     <section id="primeira-linha">
         <div class="container py-5">
             <div class="row">
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 1">
                         <div class="card-body">
@@ -67,7 +85,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 2">
                         <div class="card-body">
@@ -77,7 +95,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 3">
                         <div class="card-body">
@@ -87,7 +105,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 4">
                         <div class="card-body">
@@ -97,7 +115,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 5">
                         <div class="card-body">
@@ -107,7 +125,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Livros/livro-base.html" class="col-md-2 mb-4" style="text-decoration: none; color: inherit;">
+                <a href="../Livros/livro-base.html" class="col-md-2 mb-4">
                     <div class="card h-100">
                         <img src="assets/images/capa-branca.jpg" class="card-img-top" alt="Capa do Livro 6">
                         <div class="card-body">
@@ -122,7 +140,7 @@
     </section>
 </main>
 
-<div class="divider"></div>
+<div class="divider"></div> <!-- div para linha divisora usando classe "divider"-->
 
 <footer class="site-footer">
     <div class="container">

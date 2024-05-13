@@ -93,9 +93,45 @@ h2{
     color: inherit !important;
 }
 
+/*Manter tamanho fixo dos cards*/
 .card-img-top{
     height: 250px !important;
     object-fit: cover !important;
+}
+
+/*Alterando layout dos cards gerais*/
+.card{
+    background-color: transparent !important;
+    width: 18rem;
+    margin-right: 5px;
+    transition: 1s;
+}
+
+.card img{
+    filter: brightness(40%); /*Filtro para imagem mais escura*/
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+/*Animação ao passar o mouse pelos cards*/
+a:hover .card{
+    filter: brightness(180%);
+}
+
+a:hover .card h5{
+    font-size: 25px; /*Aumentar tamanho da letra ao passar o mouse*/
+    transition: 1s; /*Garantir transição de volta mais suave*/
+}
+
+.card h5{
+    position: absolute !important; /* Posiciona o span absolutamente em relação ao seu contêiner relativo */
+    top: 50% !important; /* Posiciona a parte superior do span no meio vertical do contêiner */
+    left: 50% !important; /* Posiciona o lado esquerdo do span no meio horizontal do contêiner */
+    transform: translate(-50%, -50%) !important; /* Desloca o span para trás pela metade de sua própria altura e largura */
+    color: white !important; /* Define a cor do texto*/
+    transition: 1s; /*Garantir transição de volta mais suave*/
 }
 
 /*FOOTER*/
@@ -115,3 +151,10 @@ h2{
     background-color: white; 
     width: 100%;
 }
+
+/*
+.banner {
+    filter: brightness(40%);
+}
+*/
+
