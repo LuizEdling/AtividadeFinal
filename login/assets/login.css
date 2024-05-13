@@ -55,7 +55,6 @@ body{
 
     #input-group{
         width: 100%;
-        margin-bottom: 4%;
     }
 
 }
@@ -87,7 +86,7 @@ body{
 }
 
 #submit{
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #FFBE0B;
     height: 70px;
     font-size: 30px;
@@ -98,7 +97,7 @@ body{
     background-color:#dea50a;
 }
 
- .input-group{
+.input-group{
     width: 40%;
     height: 20px;
     border-radius: 10px;
@@ -128,6 +127,8 @@ body{
 .errorMessageLogin, .errorMessagePassword{
     color: red;
     display: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*---------------------------*/

@@ -3,175 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/icone-_1_.ico" type="image/x-icon">
+    <!--Titulo da página-->
     <title>Biblioteca - GBooks</title>
+
     <!--Link para arquivo externo CSS-->
     <link rel="stylesheet" href="assets/biblioteca.css">
+
     <!--BootStrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg"> <!-- Define umabarra de navegação que se expande em telas grandes e secondensa em telas menores -->
+        <div class="container-fluid"> <!-- Containerresponsivo que se ajusta ao tamanho da tela -->
+            
             <!-- Logo GBooks -->
-            <h1 id="logo"><span style="color: #FFBE0B">G</span>Books</h1>
+            <div class="logo">
+                <img src="assets/images/logo-gbook.png" alt="logo-gbook">
+            </div>
             
             <!-- Toggler para menu em telas menores -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
+                <!-- Botão que controla a expansão econtração do menu em telas pequenas -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <!-- Itens do menu e barra de busca -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Container que agrupa e esconde oconteúdo do menu em telas menores até queseja expandido -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Lista de links de navegaçãohorizontal para grandes telas e verticalpara telas pequenas -->
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../Home/home.html">Início</a>
+                        <!-- Item do menu de navegação - Home-->
+                        <a class="nav-link" href="../Home/home.html">Início</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Disciplinas -->
                         <a class="nav-link" href="../Disciplinas/disciplinas.html">Disciplinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  pagina-atual" href="../Biblioteca/biblioteca.html">Biblioteca</a>
+                        <!-- Item do menu de navegação -Biblioteca -->
+                        <a class="nav-link pagina-atual" aria-current="page" href="../Biblioteca/biblioteca.html">Biblioteca</a>
                     </li>
                     <li class="nav-item">
+                        <!-- Item do menu de navegação -Perfil -->
                         <a class="nav-link" href="../Perfil/perfil.html">Perfil</a>
                     </li>
                 </ul>
-
-                <!-- Barra de pesquisa movida para dentro do collapse para mostrar em dispositivos móveis -->
+                
+                
+                <!-- Barra de pesquisa movida para dentro docollapse para mostrar em dispositivos móveis-->
+                <!-- Formulário flexível para alinhamento -->
                 <form class="d-flex">
+                    <!-- Campo de entrada grande para apesquisa -->
                     <input class="form-control me-2 form-control-lg" type="search" placeholder="Pesquisar livro" aria-label="Search">
+                    <!-- Botão de envio com estilo outline eclasse personalizada para cor -->
                     <button class="btn btn-outline-success cor-barra-busca" type="submit">Buscar</button>
                 </form>
+                
             </div>
         </div>
     </nav>
 </header>
 
+<!--Barra para dividir as seções-->
 <div class="divider"></div>
 
 <main>
+    <!--Abertura para seção Engenharias-->
     <section id="engenharias">
-        <div class="container my-5">
-            <h2 class="mb-4">Engenharias</h2>
-            <div class="scrolling-wrapper">
-                <a href="../Cursos-eng/eng-agro.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+        <div class="container my-5"> <!--Abertura de container para -->
+            <h2 class="mb-4">Engenharias</h2> <!--Título da seção-->
+            <div class="scrolling-wrapper"> <!--Div para criação da barra de rolagem-->
+                <a href="../Cursos-eng/eng-agro.html">
+                    <div class="card">
                         <img src="assets/images/engenharias/eng-agro.jpg" class="card-img-top" alt="Eng. Agronômica">
-                        <div class="card-body">
-                            <h5 class="card-title">Eng. Agronômica</h5>
-                        </div>
+                        <h5 class="card-title">Eng. Agronômica</h5>
                     </div>
                 </a>
-                <a href="../Cursos-eng/eng-civil copy.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-eng/eng-civil copy.html">
+                    <div class="card">
                         <img src="assets/images/engenharias/eng-civil.jpg" class="card-img-top" alt="Eng. Civil">
-                        <div class="card-body">
-                            <h5 class="card-title">Eng. Civil</h5>
-                        </div>
+                        <h5 class="card-title">Eng. Civil</h5>
                     </div>
                 </a>
-                <a href="../Cursos-eng/eng-soft.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-eng/eng-soft.html">
+                    <div class="card">
                         <img src="assets/images/engenharias/eng-soft.png" class="card-img-top" alt="Eng. de Software">
-                        <div class="card-body">
-                            <h5 class="card-title">Eng. de Software</h5>
-                        </div>
+                        <h5 class="card-title">Eng. de Software</h5>
                     </div>
                 </a>
-                <a href="../Cursos-eng/eng-eletrico.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-eng/eng-eletrico.html">
+                    <div class="card">
                         <img src="assets/images/engenharias/eng-eletrica.png" class="card-img-top" alt="Eng. Elétrica">
-                        <div class="card-body">
-                            <h5 class="card-title">Eng. Elétrica</h5>
-                        </div>
+                        <h5 class="card-title">Eng. Elétrica</h5>
                     </div>
                 </a>
-                <a href="../Cursos-eng/eng-mecanica.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-eng/eng-mecanica.html">
+                    <div class="card">
                         <img src="assets/images/engenharias/eng-mecanica.png" class="card-img-top" alt="Eng. Mecânica">
-                        <div class="card-body">
-                            <h5 class="card-title">Eng. Mecânica</h5>
-                        </div>
+                        <h5 class="card-title">Eng. Mecânica</h5>
                     </div>
                 </a>
             </div>
         </div>
     </section>
+    <!--As mesmas anotações anteriores valem para as sections "saude" e "ciencias-sociais-aplicadas"-->
     <section id="saude">
         <div class="container my-5">
             <h2 class="mb-4">Ciências da Saúde</h2>
             <div class="scrolling-wrapper">
-                <a href="../Cursos-saude/biomedicina.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/biomedicina.html">
+                    <div class="card">
                         <img src="assets/images/saude/biomed.png" class="card-img-top" alt="Biomedicina">
-                        <div class="card-body">
-                            <h5 class="card-title">Biomedicina</h5>
-                        </div>
+                        <h5 class="card-title">Biomedicina</h5>                        
                     </div>
                 </a>
-                <a href="../Cursos-saude/enfermagem.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/enfermagem.html">
+                    <div class="card">
                         <img src="assets/images/saude/enfermagem.png" class="card-img-top" alt="Enfermagem">
-                        <div class="card-body">
                             <h5 class="card-title">Enfermagem</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/farmacia.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/farmacia.html">
+                    <div class="card">
                         <img src="assets/images/saude/farmacia.png" class="card-img-top" alt="Farmácia">
-                        <div class="card-body">
                             <h5 class="card-title">Farmácia</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/fisioterapia.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/fisioterapia.html">
+                    <div class="card">
                         <img src="assets/images/saude/fisioterapia.png" class="card-img-top" alt="Fisioterapia">
-                        <div class="card-body">
                             <h5 class="card-title">Fisioterapia</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/medicina.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/medicina.html">
+                    <div class="card">
                         <img src="assets/images/saude/medicina.png" class="card-img-top" alt="Medicina">
-                        <div class="card-body">
                             <h5 class="card-title">Medicina</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/med-vet.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/med-vet.html">
+                    <div class="card">
                         <img src="assets/images/saude/med-vet.png" class="card-img-top" alt="Medicina Veterinária">
-                        <div class="card-body">
-                            <h5 class="card-title">Medicina veterinária</h5>
-                        </div>
+                            <h5 class="card-title">Med. Veterinária</h5>
                     </div>
                 </a>
-                <a href="../Cursos-saude/nutri.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/nutri.html">
+                    <div class="card">
                         <img src="assets/images/saude/nutricao.png" class="card-img-top" alt="Nutrição">
-                        <div class="card-body">
                             <h5 class="card-title">Nutrição</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/odonto.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/odonto.html">
+                    <div class="card">
                         <img src="assets/images/saude/odonto.png" class="card-img-top" alt="Odontologia">
-                        <div class="card-body">
                             <h5 class="card-title">Odontologia</h5>
-                        </div>
                     </div>
                 </a>
-                <a href="../Cursos-saude/psicologia.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-saude/psicologia.html">
+                    <div class="card">
                         <img src="assets/images/saude/psicologia.png" class="card-img-top" alt="Psicologia">
-                        <div class="card-body">
                             <h5 class="card-title">Psicologia</h5>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -181,44 +176,34 @@
         <div class="container my-5">
             <h2 class="mb-4">Ciências Sociais Aplicadas</h2>
             <div class="scrolling-wrapper">
-                <a href="../Cursos-c-s-a/adm.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-c-s-a/adm.html">
+                    <div class="card">
                         <img src="assets/images/ciencias-s-a/adm.png" class="card-img-top" alt="Administração">
-                        <div class="card-body">
-                            <h5 class="card-title">Administração</h5>
-                        </div>
+                        <h5 class="card-title">Administração</h5>
                     </div>
                 </a>
-                <a href="../Cursos-c-s-a/ciencias-cont.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-c-s-a/ciencias-cont.html">
+                    <div class="card">
                         <img src="assets/images/ciencias-s-a/contabeis.png" class="card-img-top" alt="Ciências Contábeis">
-                        <div class="card-body">
-                            <h5 class="card-title">Ciências Contábeis</h5>
-                        </div>
+                        <h5 class="card-title">Ciências Contábeis</h5>
                     </div>
                 </a>
-                <a href="../Cursos-c-s-a/direito.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-c-s-a/direito.html">
+                    <div class="card">
                         <img src="assets/images/ciencias-s-a/direito.png" class="card-img-top" alt="Direito">
-                        <div class="card-body">
-                            <h5 class="card-title">Direito</h5>
-                        </div>
+                        <h5 class="card-title">Direito</h5>
                     </div>
                 </a>
-                <a href="../Cursos-c-s-a/publi.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-c-s-a/publi.html">
+                    <div class="card">
                         <img src="assets/images/ciencias-s-a/publi.png" class="card-img-top" alt="Publicidade e Propaganda">
-                        <div class="card-body">
-                            <h5 class="card-title">Publicidade e Propaganda</h5>
-                        </div>
+                        <h5 class="card-title">Publicidade e P.</h5>
                     </div>
                 </a>
-                <a href="../Cursos-c-s-a/arq-urb.html" style="text-decoration: none; color: inherit;">
-                    <div class="card" style="width: 18rem;">
+                <a href="../Cursos-c-s-a/arq-urb.html">
+                    <div class="card">
                         <img src="assets/images/ciencias-s-a/arq-urb.png" class="card-img-top" alt="Arquitetura e Urbanismo">
-                        <div class="card-body">
-                            <h5 class="card-title">Arquitetura e Urbanismo</h5>
-                        </div>
+                        <h5 class="card-title">Arquitetura e Urb.</h5>
                     </div>
                 </a>
             </div>
