@@ -45,9 +45,22 @@ header .logo img {
     margin-right: 0px;
 }
 
+.btn-outline-success {
+    width: 100%;
+    max-width: 30vh;
+    height: auto;
+    margin-right: 0px;
+}
+}
+
+
 .custom-button {
     border-radius: 8px;
     padding: 20px 30px !important;
+    width: 100%;
+    max-width: 30vh;
+    height: auto;
+    margin-right: 0px;
 }
 
 .custom-button h3 {

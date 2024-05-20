@@ -82,6 +82,7 @@ button a:hover {
 .book-info p {
     text-align: justify; /* Justifica o texto do resumo para melhorar a leitura */
     text-justify: inter-word;
+    font-size: 25px !important;
 }
 
 /* Ajustes para a imagem da capa do livro */
@@ -93,11 +94,21 @@ button a:hover {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para dar destaque, se desejado */
 }
 
+.book-cover{
+    padding-bottom: 40px;
+}
+
 /* Personalização do botão */
 .book-info button.btn-primary {
     background-color: #007bff; /* Cor primária do Bootstrap para botões */
     border-color: #007bff;
+    width: 300px !important; /* Aumenta a largura do botão */
+    height: 150px !important; /* Aumenta a altura do botão */
+    padding: 15px !important;
+    font-size: 30px !important; /* Aumenta o tamanho da fonte */
 }
+
+
 
 .book-info button.btn-primary:hover {
     background-color: #0056b3; /* Cor mais escura no hover */
