@@ -1,0 +1,124 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+    background-color: rgb(27, 26, 26) !important;
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 55vh !important;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo {
+    text-align: center;
+}
+
+.custom-button {
+    border-radius: 8px;
+    padding: 20px 30px !important;
+}
+
+.custom-button h3 {
+    color: rgb(0, 0, 0) !important;
+    font-size: 25px !important;
+}
+
+button a:hover {
+    color: #684ec5 !important;
+}
+
+.card-img-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Media query para ajustamento das imagens em telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px){
+    #ItensMenu .card{
+        margin-bottom: 20px !important;
+    }
+}
+
+#ItensMenu .card{
+    background-color: #fff !important;
+    width: 20rem !important;
+    padding: 5px !important;
+}
+
+#ItensMenu .card-img-size{
+    height: 200px;
+    object-fit: cover;
+}
+
+#livro h2 {
+    flex-grow: 1;
+    color: #FFBE0B;
+    text-align: center; 
+    font-size: 40px;
+    margin: 0;
+}
+
+.book-info h3, .book-info p {
+    color: white !important; /* Cor do texto para os detalhes do livro */
+}
+
+.book-info p {
+    text-align: justify; /* Justifica o texto do resumo para melhorar a leitura */
+    text-justify: inter-word;
+}
+
+/* Ajustes para a imagem da capa do livro */
+.img-fluid {
+    width: 100%; /* Faz a imagem preencher a largura da div */
+    height: 100%; /* Faz a imagem preencher a altura da div */
+    object-fit: cover; /* Garante que a imagem cubra a div completamente */
+    border-radius: 5px; /* Arredondamento das bordas da imagem, se desejado */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para dar destaque, se desejado */
+}
+
+/* Personalização do botão */
+.book-info button.btn-primary {
+    background-color: #007bff; /* Cor primária do Bootstrap para botões */
+    border-color: #007bff;
+}
+
+.book-info button.btn-primary:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+    border-color: #0056b3;
+}
+
+/* Centraliza o botão horizontalmente */
+.button-container {
+    display: flex;
+    justify-content: center !important;
+}
+
+/*FOOTER*/
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}
+
+.site-footer p {
+    color: white !important;
+    font-size: 20px;
+}
