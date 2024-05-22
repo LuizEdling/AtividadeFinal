@@ -1,0 +1,156 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 20vh;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+    font-size: 15px !important;
+}
+
+ul li a:hover{
+    color: #4879CA !important;
+}
+
+.pagina-atual{
+    color: #EED200 !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #0065EF 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover, .cor-barra-busca:active{
+    background-color: #0065EF !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(19, 19, 19) !important;
+}
+
+.dropdown-divider{
+    border-color: white !important;
+}
+
+.dropdown .btn, .dropdown .btn:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+
+/*Mudando o ícone do menu 'hamburguer'*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+/*DISCIPLINAS*/
+
+#disciplinas .disciplina {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#disciplinas .capa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#disciplinas .imagem-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#disciplinas .conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#disciplinas .foto-professor {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#disciplinas .acessar-disciplina {
+    display: block;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#disciplinas .acessar-disciplina:hover {
+    background-color: #0056b3;
+}
+
+#disciplinas h2{
+    color:white;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}
