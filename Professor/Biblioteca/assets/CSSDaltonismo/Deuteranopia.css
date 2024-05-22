@@ -1,0 +1,173 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 20vh;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+    font-size: 15px !important;
+}
+
+ul li a:hover{
+    color: #547AC5 !important;
+}
+
+.pagina-atual{
+    color: #F8DE35 !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #005BE7 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover, .cor-barra-busca:active{
+    background-color: #005BE7 !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(19, 19, 19) !important;
+}
+
+.dropdown-divider{
+    border-color: white !important;
+}
+
+.dropdown .btn, .dropdown .btn:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+
+/*Mudando o ícone do menu 'hamburguer'*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+/*Alterando barra de rolagem em cada área de matérias*/
+.scrolling-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar{
+    height: 10px;
+    width: 20px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb{
+    background-color: #f4f0f0;
+    border-radius: 30px;
+}
+
+.scrolling-wrapper .card {
+    display: inline-block;
+}
+
+/*Alterando cor de texto e cards*/
+h2{
+    color: rgb(255, 255, 255) !important;
+}
+
+#engenharias a, #saude a, #ciencias-socieais-aplicadas a{
+    text-decoration: none !important; 
+    color: inherit !important;
+}
+
+/*Manter tamanho fixo dos cards*/
+.card-img-top{
+    height: 250px !important;
+    object-fit: cover !important;
+}
+
+/*Alterando layout dos cards gerais*/
+.card{
+    background-color: transparent !important;
+    width: 18rem;
+    margin-right: 5px;
+    transition: 1s;
+}
+
+.card img{
+    filter: brightness(40%); /*Filtro para imagem mais escura*/
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+/*Animação ao passar o mouse pelos cards*/
+a:hover .card{
+    filter: brightness(180%);
+}
+
+a:hover .card h5{
+    font-size: 25px; /*Aumentar tamanho da letra ao passar o mouse*/
+    transition: 1s; /*Garantir transição de volta mais suave*/
+}
+
+.card h5{
+    position: absolute !important; /* Posiciona o span absolutamente em relação ao seu contêiner relativo */
+    top: 50% !important; /* Posiciona a parte superior do span no meio vertical do contêiner */
+    left: 50% !important; /* Posiciona o lado esquerdo do span no meio horizontal do contêiner */
+    transform: translate(-50%, -50%) !important; /* Desloca o span para trás pela metade de sua própria altura e largura */
+    color: white !important; /* Define a cor do texto*/
+    transition: 1s; /*Garantir transição de volta mais suave*/
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}
+
+/*
+.banner {
+    filter: brightness(40%);
+}
+*/
+

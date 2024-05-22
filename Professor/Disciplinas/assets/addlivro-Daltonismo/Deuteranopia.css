@@ -1,0 +1,135 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 20vh;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+    font-size: 15px !important;
+}
+
+ul li a:hover{
+    color: #547AC5 !important;
+}
+
+.pagina-atual{
+    color: #F8DE35 !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #005BE7 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover, .cor-barra-busca:active{
+    background-color: #005BE7 !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(19, 19, 19) !important;
+}
+
+.dropdown-divider{
+    border-color: white !important;
+}
+
+.dropdown .btn, .dropdown .btn:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+
+/*Mudando o ícone do menu 'hamburguer'*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+body{
+    background-color: rgb(27, 26, 26) !important; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+.container {
+    color: #FFF; /* Cor do texto dentro do container para garantir visibilidade */
+}
+
+/* Títulos das Seções */
+h2, h3 {
+    color: #F8DE35; /* Cor amarela para destaque dos títulos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
+}
+
+/* Estilização dos Formulários */
+.form-label {
+    color: #F8DE35; /* Cor amarela para os labels, para destaque */
+}
+
+.form-control {
+    background-color: rgb(45, 44, 44); /* Cor de fundo mais escura para os campos */
+    border: 1px solid #005BE7; /* Cor de borda violeta para se destacar no fundo escuro */
+    color: white; /* Cor do texto */
+}
+
+.form-control:focus {
+    border-color: #F8DE35; /* Cor amarela para borda quando focado */
+    box-shadow: 0 0 0 0.25rem rgba(255, 190, 11, 0.25); /* Sombra suave amarela */
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #005BE7; /* Cor principal violeta */
+    border: none; /* Sem borda */
+}
+
+.btn-primary:hover {
+    background-color: #F8DE35; /* Cor de destaque amarela ao passar o mouse */
+    border: none;
+}
+
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}

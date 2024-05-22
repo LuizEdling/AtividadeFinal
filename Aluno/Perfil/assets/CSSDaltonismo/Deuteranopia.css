@@ -1,0 +1,138 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 20vh;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+    font-size: 15px !important;
+}
+
+ul li a:hover{
+    color: #547AC5 !important;
+}
+
+.pagina-atual{
+    color: #F8DE35 !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #005BE7 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover, .cor-barra-busca:active{
+    background-color: #005BE7 !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(19, 19, 19) !important;
+}
+
+.dropdown-divider{
+    border-color: white !important;
+}
+
+.dropdown .btn, .dropdown .btn:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+
+/*Mudando o ícone do menu 'hamburguer'*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+/*Classe para mudar textos para a cor branca*/
+.texto-branco{
+    color: white !important;
+}
+
+/*Foto do aluno ficar dentro de um círculo*/
+#info-aluno #foto-aluno{
+    border-radius: 100%;
+    margin-bottom: 5px; /*Espaçamento estre foto e nome e instituição do aluno*/
+}
+
+/*Mudando a classe 'card' do próprio BootStrap*/
+/*Garante que todos os cards tenham a mesma altura*/
+.card {
+    border: 3px solid #005BE7 !important;
+}
+
+/*Ajustando a reponsividade dos cards*/
+.card-img-top {
+    width: 100%; 
+    height: 150px;
+    object-fit: cover; 
+}
+
+/*Histórico*/
+/*Espaçamento do elemento 'footer'*/
+#historico{
+    margin-bottom: 40px;
+}
+
+/*Espaçamento entre os cards*/
+#historico .card {
+    margin-right: 10px; 
+}
+
+/*Pequeno ajuste no título do livro*/
+#historico .card-body {
+    padding: 0.5rem; 
+}
+
+/*Mais ajustes no título do card*/
+#historico .card-title {
+    font-size: 1rem; 
+    margin-bottom: 0; 
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}

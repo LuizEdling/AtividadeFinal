@@ -1,0 +1,171 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*BODY*/
+/*Alterando cor de fundo da página*/
+body{
+    background-color: rgb(27, 26, 26) !important;
+}
+
+
+/*HEADER*/
+/*Geral*/
+header {
+    padding: 10px 20px; 
+}
+
+/*Logo*/
+header .logo img{
+    max-width: 20vh;
+    height: auto;
+    margin-right: 20px;
+}
+
+/*Navbar*/
+header .logo, header #nav_topo {
+    float: none;
+}
+
+ul li a{
+    color: white !important;
+    font-size: 15px !important;
+}
+
+ul li a:hover{
+    color: #4879CA !important;
+}
+
+.pagina-atual{
+    color: #EED200 !important;
+    text-decoration: underline !important;
+}
+
+.cor-barra-busca{
+    border: #0065EF 1px solid !important;
+    color: white !important;
+}
+
+.cor-barra-busca:hover, .cor-barra-busca:active{
+    background-color: #0065EF !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(19, 19, 19) !important;
+}
+
+.dropdown-divider{
+    border-color: white !important;
+}
+
+.dropdown .btn, .dropdown .btn:hover{
+    background-color: rgb(27, 26, 26);
+}
+
+
+/*Mudando o ícone do menu 'hamburguer'*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+/*MAIN*/
+/*Mudando cores de texto*/
+h1, p{
+    color:white !important;
+}
+
+/*Alterando carrossel de imagens*/
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 550px !important; 
+}
+
+/*Media query para ajustamento das imagens em telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px){
+    #MaisAcessados .card{
+        margin-bottom: 20px !important;
+    }
+}
+
+/*Mais acessados*/
+#MaisAcessados .card-text{
+    color: black !important;
+}
+
+/*LIVROS RECOMENDADOS*/
+#MaisAcessados .card{
+    background-color: #fff !important;
+    border: 3px solid #0065EF !important;  
+    width: 18rem !important;
+    padding: 15px !important;
+}
+
+#MaisAcessados .card a{
+    background-color: #0065EF !important;
+}
+
+
+#MaisAcessados .card-img-size{
+    height: 200px;
+    object-fit: cover;
+}
+
+/*Media query para espaçamento dos cards para telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px){
+    #MaisAcessados .card{
+        margin-bottom: 20px !important;
+    }
+}
+
+/*RESENHAS*/
+#resenhas-livros {
+    background-color: rgb(27, 26, 26) !important; 
+    padding-top: 60px; 
+    padding-bottom: 30px; 
+    color: white; 
+}
+
+#resenhas-livros .card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    background-color: white !important;
+    border: 3px solid #0065EF;
+}
+
+#resenhas-livros .card h5,
+#resenhas-livros .card p {
+    color: black !important; 
+}
+
+#resenhas-livros .card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+#resenhas-livros a{
+    background-color: #0065EF !important;
+}
+
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.divider {
+    height: 2px; 
+    background-color: white; 
+    width: 100%;
+}
