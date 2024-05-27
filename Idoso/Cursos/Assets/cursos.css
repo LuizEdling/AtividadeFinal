@@ -1,31 +1,32 @@
 /*RESET CSS*/
+/* Define o reset para as margens e preenchimento */
 *{
     margin: 0;
     padding: 0;
 }
 
 /*BODY*/
-/*Alterando cor de fundo da página*/
+/* Alterando cor de fundo da página */
 body{
     background-color: rgb(27, 26, 26) !important;
 }
 
 
 /*HEADER*/
-/*Geral*/
+/* Geral */
 header {
     padding: 10px 20px; 
     background-color: rgb(27, 26, 26) !important;
 }
 
-/*Logo*/
+/* Logo */
 header .logo img{
     max-width: 55vh !important;
     height: auto;
     margin-right: 20px;
 }
 
-/*Navbar*/
+/* Navbar */
 header .logo {
     text-align: center;
 }
@@ -37,6 +38,7 @@ header .logo img {
     margin-right: 0px;
 }
 
+/* Custom Button */
 .custom-button {
     border-radius: 8px;
     padding: 20px 30px !important;
@@ -47,26 +49,26 @@ header .logo img {
     font-size: 25px !important;
 }
 
+/* Hover do botão */
 button a:hover {
     color: #684ec5 !important;
 }
 
+/* CARDS E IMAGENS */
 .card-img-size {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-
-
-/*Media query para ajustamento das imagens em telas de 990px ou menos de largura */
-@media only screen and (max-width: 991px){
-    #ItensMenu .card{
+/* Media query para ajustamento das imagens em telas de 990px ou menos de largura */
+@media only screen and (max-width: 991px) {
+    #ItensMenu .card {
         margin-bottom: 20px !important;
     }
 }
 
+/* Estilo dos cartões do menu */
 #ItensMenu .card{
     background-color: #fff !important;
     width: 20rem !important;
@@ -93,6 +95,8 @@ button a:hover {
 }
 
 
+/* SEÇÕES DE DISCIPLINAS */
+/* Estilo do título da seção */
 #titulo {
     color: white !important;
     text-align: center !important;
@@ -101,7 +105,7 @@ button a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+/* Estilo das disciplinas */
 #Livros .disciplina {
     transition: transform 0.3s;
     position: relative;
@@ -150,17 +154,17 @@ button a:hover {
 }
 
 
-/*FOOTER*/
+/* FOOTER */
 
+/* Divisória do rodapé */
 .divider {
     height: 2px; 
     background-color: white; 
     width: 100%;
 }
 
+/* Estilo do texto no rodapé */
 .site-footer p {
     color: white !important;
     font-size: 20px;
 }
-
-
